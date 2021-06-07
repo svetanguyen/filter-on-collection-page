@@ -5,9 +5,21 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="node_modules/@shower/ribbon/styles/styles.css">
-    <style>
+    <style>        
         .shower {
             --slide-ratio: calc(16 / 9);
+        }
+
+        .slide h2 {
+            text-align: center;
+            text-transform: capitalize;
+            /* color: #db7093;             */
+            font-size: 50px;
+            text-shadow: 0 2px 5px rgb(0 0 0 / 30%);
+        }
+
+        .slide {
+            /* background-color: black; */
         }
     </style>
 </head>
@@ -19,7 +31,27 @@
     </header>
 
     <section class="slide">
-        <!-- Create your first slide -->
+        <h2>Filter collection on cart page</h2>
+    </section>
+
+    <section class="slide">
+        <h3>Issue</h3>
+        <ol>
+            <li>Show an add on products section on cart page from a collection</li>
+            <li>Filter products by tag</li>
+            <li>Load more</li>
+        </ol>
+    </section>
+
+    <section class="slide">
+        <h3>Solution</h3>
+        <ol>
+            <li>Create a collection template</li>
+            <li>Paginate it by the amount of products needed to be showed</li>
+            <li>Insert the collection layout into the section using ajax</li>
+            <li>When click on load more insert the layout from the next collection page</li>
+            <li>Add tag to the handle to filter out products</li>
+        </ol>
     </section>
 
     <footer class="badge">
